@@ -14,7 +14,7 @@ workflow "Twitch issue" {
 }
 
 action "twitch alerts docker action" {
-  uses = "docker://noopkat/twitch-dev-alerts-action:0.0.3"
+  uses = "docker://noopkat/twitch-dev-alerts-action:0.0.4"
   secrets = [
     "TWITCH_CHANNEL",
     "TWITCH_EXT_CLIENT",
