@@ -1,16 +1,16 @@
 workflow "Twitch check_suite" {
-  on = "check_suite"
+  on = ""
   resolves = ["twitch alerts docker action"]
 }
 
 workflow "Twitch pull_request" {
   resolves = ["twitch alerts docker action"]
-  on = "pull_request"
+  on = ""
 }
 
 workflow "Twitch issue" {
   resolves = ["twitch alerts docker action"]
-  on = "issues"
+  on = ""
 }
 
 action "twitch alerts docker action" {
